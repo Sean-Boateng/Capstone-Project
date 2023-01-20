@@ -36,7 +36,7 @@ const HomePage = () => {
             {car.year} {car.model} {car.make}
           </p>
         ))}
-      <Calendar/>
+      {/* <Calendar/> */}
     </div>
   );
 };

@@ -13,6 +13,7 @@ import Footer from "./components/Footer/Footer";
 
 // Util Imports
 import PrivateRoute from "./utils/PrivateRoute";
+import Announcements from "./components/Announcements/Announcements";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/news" element={<Announcements />} />
       </Routes>
       <Footer />
     </div>
