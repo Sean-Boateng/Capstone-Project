@@ -13,6 +13,7 @@ import Footer from "./components/Footer/Footer";
 
 // Util Imports
 import PrivateRoute from "./utils/PrivateRoute";
+import Event from "./components/Events and Calendar/Events";
 
 function App() {
   return (
@@ -23,12 +24,13 @@ function App() {
           path="/"
           element={
             <PrivateRoute>
-              <HomePage />
-            </PrivateRoute>
+              <HomePage/>
+            </PrivateRoute>           
           }
         />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/event" element={<Event />} />
       </Routes>
       <Footer />
     </div>
