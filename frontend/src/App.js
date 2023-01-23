@@ -16,6 +16,7 @@ import PrivateRoute from "./utils/PrivateRoute";
 import Announcements from "./components/Announcements/Announcements";
 import HomePage2 from "./UserPOV/HomePage2";
 import Members from "./components/Members/Members";
+import YoutubePlayer from "./components/Youtube/YoutubePlayer";
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         <Route path="/news" element={<Announcements />} />
         <Route path="/home" element={<HomePage2 />} />
         <Route path="/members" element={<Members />} />
+        <Route path="/video" element={<YoutubePlayer />} />
       </Routes>
       <Footer />
     </div>
