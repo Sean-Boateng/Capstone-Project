@@ -23,3 +23,22 @@ def member_list(request):
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data, status= status.HTTP_201_CREATED )
+
+
+@api_view(['GET', 'PUT', 'DELETE'])
+def member_detail(request,pk):
+    
+    if request.method == 'GET':
+        member = get_object_or_404(Member,pk=pk)
+        serializer = MemberSerializer(member)
+        return Response(serializer.data)
+    elif request.method =='PUT':
+        member = get_object_or_404(Member,pk=pk)
+        serializer = MemberSerializer(member, data = request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data)
+    elif request.method == 'DELETE':
+        member = get_object_or_404(Member,pk=pk)
+        member.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)

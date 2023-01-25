@@ -1,52 +1,46 @@
 import React, { useState } from 'react';
 
-const AddMembers = (props) => {
 
-    const[firstName,setFirstName]=useState('');
-    const[lastName,setLastName]=useState('');
-    const[DOB,setDOB]=useState('');
-    const[address,setAddress]=useState('');
-    const[email,setEmail]=useState('');
-    
-    
+const AddMember = (props) => {
+
+    const[firstName,setFirstName]=useState('')
+    const[lastName,setLastName]=useState('')
+    const[DOB,setDOB]=useState('')
+    const[address,setAddress]=useState('')
+    const[email,setEmail]=useState('')
 
 
     function addNewMember(info){
         info.preventDefault();
         let newEntry = {
-            firstName : firstName,
-            lastName : lastName,
-            DOB : DOB,
-            address : address,
-            email : email,
-            
+            first_name: firstName,
+            last_name: firstName,
+            date_of_birth: DOB,
+            address:address,
+            email:email
         };
         console.log(newEntry)
         props.addmember(newEntry)
     }
     return ( 
-        <div>
-            <div>AFTER ADDING NEW MEMBER, PLEASE REFRESH PAGE TO SEE NEW RESULTS</div>
-            <form onSubmit ={addNewMember}>
-                <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}>FirstName</label>
-                <input  style={{color: 'black'}} type='string' value ={firstName} onChange={(info)=>setFirstName(info.target.value  )}/><br/>
+        <form onSubmit ={addNewMember}>
+            <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}>firstName</label>
+            <input  style={{color: 'black'}} type='string' value ={firstName} onChange={(info)=>setFirstName(info.target.value  )}/><br/>
 
-                <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}> LastName</label>
-                <input style={{color: 'black'}} type= 'string' value ={lastName} onChange={(info)=>setLastName(info.target.value)}/><br/>
+            <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}> lastName</label>
+            <input style={{color: 'black'}} type= 'string' value ={lastName} onChange={(info)=>setLastName(info.target.value)}/><br/>
 
-                <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}> DOB</label>
-                <input style={{color: 'black'}} type= 'string' value ={DOB} onChange={(info)=>setDOB(info.target.value)}/><br/>
+            <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}>DOB</label>
+            <input style={{color: 'black'}} type= 'date' value ={DOB} onChange={(info)=>setDOB(info.target.value)}/><br/>
+            
+            <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}>address</label>
+            <input style={{color: 'black'}} type='string' value = {address} onChange = {(info)=> setAddress(info.target.value)}/><br/>
 
-                <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}> Address</label>
-                <input style={{color: 'black'}} type= 'string' value ={address} onChange={(info)=>setAddress(info.target.value)}/><br/>
-
-                <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}> Email</label>
-                <input style={{color: 'black'}} type= 'string' value ={email} onChange={(info)=>setEmail(info.target.value)}/><br/>
-
-                
-                <button type='submit' >Add</button>
-            </form >
-        </div>
+            <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}>email</label>
+            <input style={{color: 'black'}} type= 'string' value ={email} onChange={(info)=>setEmail(info.target.value)}/><br/>    
+            <button type='submit' >Add</button>
+        </form >
      );
 }
-export default AddMembers;
+ 
+export default AddMember;
