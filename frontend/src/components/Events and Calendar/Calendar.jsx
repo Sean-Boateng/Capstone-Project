@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import FullCalendar from '@fullcalendar/react' // must go before plugins
 import dayGridPlugin from '@fullcalendar/daygrid' // a plugin!
+import AddEvent from './AddEvent';
 
 
 
@@ -27,6 +28,14 @@ const Calendar = () => {
   
     }
 
+    async function addEvent(newEntry){
+        let response = await axios.post(`http://127.0.0.1:8000/api/events/`, newEntry);
+        if (response.status === 201){
+            await getAllEvents()
+          }
+          setData(response)
+    }
+
     return ( 
         <div>
             
@@ -37,7 +46,8 @@ const Calendar = () => {
                 weekends={true}
                 events={data}
              />
-                </div>
+             <AddEvent addevent={addEvent}/>
+            </div>
      );
 }
  
