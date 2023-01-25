@@ -44,7 +44,16 @@ const Calendar = () => {
                 plugins={[ dayGridPlugin ]}
                 initialView="dayGridMonth"
                 weekends={true}
+                eventClick={
+                    function(arg){
+                        debugger
+                        alert(arg.event.title)
+                        
+                        alert(arg.event.start, )
+                    }
+                }
                 events={data}
+                
              />
              <AddEvent addevent={addEvent}/>
             </div>

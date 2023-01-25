@@ -17,6 +17,9 @@ import Announcements from "./components/Announcements/Announcements";
 import HomePage2 from "./UserPOV/HomePage2";
 import Members from "./components/Members/Members";
 import YoutubePlayer from "./components/Youtube/YoutubePlayer";
+import { ContactUs } from "./components/Email/email";
+
+
 
 
 function App() {
@@ -38,6 +41,7 @@ function App() {
         <Route path="/home" element={<HomePage2 />} />
         <Route path="/members" element={<Members />} />
         <Route path="/video" element={<YoutubePlayer />} />
+        <Route path="/email" element={<ContactUs/>} />
       </Routes>
       <Footer />
     </div>

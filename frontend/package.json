@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@fullcalendar/core": "^6.0.3",
     "@fullcalendar/daygrid": "^6.0.3",
     "@fullcalendar/react": "^6.0.4",
