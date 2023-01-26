@@ -8,14 +8,20 @@ import UpdateMember from "./UpdateMember";
 const Members = (props) => {
     const [members, setMembers]=useState([]);
     const [id, setId]=useState([]);
+    const [memberToUpdate, setMemberToUpdate]=useState({})
+    const [showUpdate,setShowUpdate] =useState(false)
     
-
+  
 
     useEffect(()=>{
         getAllMembers();     
     }, [])
     
 
+    function toggleAndUpdate(updatePerson){
+        setMemberToUpdate(updatePerson)
+        setShowUpdate(true)
+    }
     async function getAllMembers(){
         let response = await axios.get(`http://127.0.0.1:8000/api/members/`);
         let newresponse = (response.data).map(function(el){
@@ -47,10 +53,17 @@ const Members = (props) => {
         console.log(id)
     }
 
-    async function updateMember(newEntry){
-        console.log(id)
-        console.log(newEntry)
-        let response = await axios.put(`http://127.0.0.1:8000/api/members/${id}/`, newEntry)
+    async function updateMember(){
+        
+        let newEntry = {
+            first_name: memberToUpdate.firstName,
+            last_name:  memberToUpdate.lastName,
+            date_of_birth:  memberToUpdate.DOB,
+            address:  memberToUpdate.address,
+            email: memberToUpdate.email
+        };
+        let response = await axios.put(`http://127.0.0.1:8000/api/members/${memberToUpdate.id}/`, newEntry)
+        getAllMembers()
     }
 
 
@@ -67,10 +80,12 @@ const Members = (props) => {
 
     return ( 
         <div>
-            <MembersTable listOfMembers = {members}/>
+            <MembersTable listOfMembers = {members} setMemberToUpdate={toggleAndUpdate}/>
             <AddMembers addmember = {addNewMember}/>
             <DeleteMember removemember = {deleteMember}/>
-            <UpdateMember thisid = {catchId} updateInfo={updateMember}/>
+            {showUpdate ?  <UpdateMember updateInfo={updateMember} setMemberToUpdate={setMemberToUpdate} memberToUpdate={memberToUpdate}/>
+            : null}
+           
         </div>
      );
 }

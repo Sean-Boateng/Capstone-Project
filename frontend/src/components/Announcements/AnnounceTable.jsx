@@ -8,7 +8,8 @@ const AnnounceTable = (props) => {
         <tbody>
           {props.news.map((news) => {
               return(
-                <tr >
+                <tr>
+                  <td>{news.id}</td>
                   <td>{news.announcements}</td>
                   <td>{news.details}</td>
                   

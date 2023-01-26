@@ -1,0 +1,41 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 130px;
+    
+    padding-left: 1em;
+    padding-right: 1em;
+    
+
+}
+
+li{
+    padding-left: 1em;  
+}
+
+.logoandname{
+    display: flex;
+    flex-direction: row;
+}
+.replib{
+    display: flex;
+    justify-content: center;
+    color: rgb(227, 121, 1);
+    font-family: serif;
+    font-style: oblique;
+    
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.logo1{
+    height: 70px;
+}
+
+.name{
+    
+}

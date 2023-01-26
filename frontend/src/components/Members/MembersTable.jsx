@@ -27,6 +27,7 @@ const MembersTable = (props) => {
                   <td>{el.DOB}</td>
                   <td>{el.address}</td>
                   <td>{el.email}</td>
+                  <button onClick={()=>props.setMemberToUpdate(el)}>Edit</button>
                 </tr>
               );
           }

@@ -49,7 +49,7 @@ const Calendar = () => {
                         debugger
                         alert(arg.event.title)
                         
-                        alert(arg.event.start, )
+                        alert(`${arg.event.title} will be happening live on ${arg.event.startStr}` )
                     }
                 }
                 events={data}

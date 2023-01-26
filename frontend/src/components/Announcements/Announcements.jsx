@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import AddAnnouncements from './AddAnnouncements';
 import AnnounceTable from './AnnounceTable';
+import DeleteAnnouncement from './DeleteAnnouncements';
 const Announcements = () => {
 
     const [news, setNews] = useState([])
@@ -17,6 +18,7 @@ const Announcements = () => {
             console.log(response.data)
             let newresponse = (response.data).map(function(el){
                 return{
+                    id : el.id,
                     announcements : el.announcements,
                     details : el.details
                 }
@@ -35,12 +37,19 @@ const Announcements = () => {
             setNews(response)
           }
 
+          async function deleteAnnouncement(id){
+            let response = await axios.delete(`http://127.0.0.1:8000/api/announcements/${id}/`);
+            if (response.status === 204){
+                return('Delete Successful')
+            } }
+
 
     
     return ( 
         <div>
             <AnnounceTable news = {news}/>
             <AddAnnouncements addnews = {AddNewnews}/>
+            <DeleteAnnouncement removeannouncement = {deleteAnnouncement}/>
         </div>
 
     );
