@@ -16,9 +16,13 @@ import PrivateRoute from "./utils/PrivateRoute";
 import Announcements from "./components/Announcements/Announcements";
 import HomePage2 from "./UserPOV/HomePage2";
 import Members from "./components/Members/Members";
-import YoutubePlayer from "./components/Youtube/YoutubePlayer";
+
 import { ContactUs } from "./components/Email/email";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import UserAnnouncementDetails from "./UserPOV/UserAnnoouncements/UserAnnouncementDetails";
+import LatestVideo from "./components/Youtube/LastestVideo";
+import WelcomeVideo from "./components/Youtube/WelcomeVideo";
+import About from "./UserPOV/About/About";
 
 
 
@@ -41,8 +45,11 @@ function App() {
         <Route path="/news" element={<Announcements />} />
         <Route path="/home" element={<HomePage2 />} />
         <Route path="/members" element={<Members />} />
-        <Route path="/video" element={<YoutubePlayer />} />
+        <Route path="/latest" element={<LatestVideo />} />
+        <Route path="/welcome" element={<WelcomeVideo />} />
         <Route path="/email" element={<ContactUs/>} />
+        <Route path="/stuff" element={<UserAnnouncementDetails/>} />
+        <Route path="/about" element={<About/>} />
       </Routes>
       {/* <Footer /> */}
     </div>

@@ -9,9 +9,9 @@ const UserAnnounceTable = (props) => {
           {props.news.map((news) => {
               return(
                 <tr >
-                  <td>{news.announcements}</td>
-                  <td>{news.details}</td>
-                  
+                  <td style={{paddingBottom:' 20px'}}>
+                    {news.announcements}
+                    </td> 
                 </tr>
               );
           }

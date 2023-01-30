@@ -4,6 +4,7 @@ import UserAnnounceTable from './UserAnnouceTable';
 
 
 
+
 const UserAnnouncements = () => {
 
     const [news, setNews] = useState([])
@@ -28,20 +29,14 @@ const UserAnnouncements = () => {
         }
 
 
-        async function AddNewnews(newEntry){
-            console.log(newEntry)
-            let response = await axios.post('http://127.0.0.1:8000/api/announcements/', newEntry);
-            if (response.status === 201){
-              await getAnnouncements()
-            }
-            setNews(response)
-          }
+        
 
 
     
     return ( 
         <div>
             <UserAnnounceTable news = {news}/>
+            
             
         </div>
 

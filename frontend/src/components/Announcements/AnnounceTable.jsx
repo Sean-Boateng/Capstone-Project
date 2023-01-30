@@ -1,6 +1,6 @@
 const AnnounceTable = (props) => {
     return ( 
-        <table>
+        <table class="table table-dark">
         <thead>
           
         </thead>
