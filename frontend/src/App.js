@@ -23,6 +23,7 @@ import UserAnnouncementDetails from "./UserPOV/UserAnnoouncements/UserAnnounceme
 import LatestVideo from "./components/Youtube/LastestVideo";
 import WelcomeVideo from "./components/Youtube/WelcomeVideo";
 import About from "./UserPOV/About/About";
+import Pictures from "./components/Pictures/Pictures";
 
 
 
@@ -50,6 +51,7 @@ function App() {
         <Route path="/email" element={<ContactUs/>} />
         <Route path="/stuff" element={<UserAnnouncementDetails/>} />
         <Route path="/about" element={<About/>} />
+        <Route path="/pictures" element={<Pictures/>} />
       </Routes>
       {/* <Footer /> */}
     </div>

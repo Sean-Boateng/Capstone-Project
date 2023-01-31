@@ -14,7 +14,7 @@ const Navbar2 = () => {
                         <li><a href='/about' >About</a></li>
                         <li><a href='/home' ><img className='logo1' src={YAY} alt = ""/></a></li>
                         <li><a href='/home' >Connect</a></li>
-                        <li><a href='/home' >Reach Out</a></li>
+                        <li><a href='/email' >Reach Out</a></li>
                     </ul>  
                 </div>
             

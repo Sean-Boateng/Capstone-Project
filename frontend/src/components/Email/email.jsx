@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import "./email.css"
+import Navbar2 from '../../UserPOV/NavBar/navbar2';
 
 export const ContactUs = () => {
   const form = useRef();
@@ -16,14 +18,19 @@ export const ContactUs = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
+    <div>
+      <Navbar2/>
+      <form className='emailborder' ref={form} onSubmit={sendEmail}>
+        <label>Name</label>
+        <input className='input' type="text" name="from_name" />
+        <label>Email</label>
+        <input type="email" name="from_email" />
+        <label>Message</label>
+        <textarea name="message" />
+        {/* <input type="submit" value="Send" /> */}
+        <button type="submit button" class="btn btn-primary" value="Send">Send</button>
+        
     </form>
+    </div>
   );
 };
