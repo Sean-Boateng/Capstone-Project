@@ -5,6 +5,7 @@ import calendar from "./bodyImages/calendar.png"
 import './body1.css'
 import UserAnnouncements from "../UserAnnoouncements/UserAnnouncements"
 import UserAnnouncementDetails from "../UserAnnoouncements/UserAnnouncementDetails"
+import LatestVideo from "../../components/Youtube/LastestVideo"
 const Body1 = () => {
     
     
@@ -30,13 +31,17 @@ const Body1 = () => {
             </div>
 
             <div className="div4">
-                <div className="check">CHECK OUT OUR<br/><span className="events">Events</span></div>
-                    <div className="div3">
-                        <div>
-                            <div className="red">We make the effort to inform all members and visitors of our upcoming programs. Our media team ensures that the information found here is always up-to-date. Click the button below to view a list of our upcoming events in both calendar form and table.</div>
-                            <a href="/stuff"><button  type="button" class="btn btn-primary" >More</button></a>
-                        </div>
-                    </div>   
+                <div className="row">
+                    <div className="col box1"><a href="/news">Announcement</a> </div>
+                    <div className="col box2"><a href="/calendardisplay">Events/Calendar</a> </div>
+                </div>
+                
+                <div className="row">
+                    <div className="spaceholder">hello</div>
+                    <LatestVideo/>
+                </div>
+                
+                    
                 </div>
             <div>
                 

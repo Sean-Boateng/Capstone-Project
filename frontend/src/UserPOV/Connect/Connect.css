@@ -1,0 +1,36 @@
+.connectpage{
+    margin-top: 20px;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(227, 121, 2) , rgb(255, 255, 255));
+    
+}
+
+.toppage{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(227, 121, 2) , rgb(255, 255, 255));
+    margin-bottom: 20px;
+
+}
+
+.textenvi{
+    padding-top: 20px;
+    font-size: 40px;
+    
+    /* background-image: linear-gradient(to right, rgb(227, 121, 2) , rgb(255, 255, 255)); */
+}
+
+.welvidtext{
+    background: -webkit-linear-gradient(rgb(49, 48, 48), rgb(59, 55, 51));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+}

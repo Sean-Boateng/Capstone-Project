@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import "./email.css"
+import "./ContactUs.css"
 import Navbar2 from '../../UserPOV/NavBar/navbar2';
 
 export const ContactUs = () => {
@@ -19,7 +19,7 @@ export const ContactUs = () => {
 
   return (
     <div>
-      <Navbar2/>
+     
       <form className='emailborder' ref={form} onSubmit={sendEmail}>
         <label>Name</label>
         <input className='input' type="text" name="from_name" />

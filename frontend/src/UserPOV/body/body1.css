@@ -51,7 +51,7 @@
 }
 
 .grid-container {
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(228, 228, 228) , rgb(255, 255, 255));
     display: grid;
     grid-template-columns: auto auto auto;
     padding-top:30px ;
@@ -61,7 +61,7 @@
     
   }
   .grid-item {
-    background-color: rgb(255, 255, 255);;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(228, 228, 228) , rgb(255, 255, 255));
     border: 1px solid rgb(255, 255, 255);
     padding: 10px;
     font-size: 30px;
@@ -71,10 +71,8 @@
     
   }
   .div2{
-    background-color: rgb(255, 255, 255);
-   
     
-    
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(228, 228, 228) , rgb(255, 255, 255)); 
   }
   
   
@@ -160,7 +158,6 @@
 .red{
     display: flex;
     justify-content: center;
-    border: 5px rgb(228, 228, 228) solid;
     border-width: 10px;
     font-size: 20px;
     color: rgb(221, 121, 1);
@@ -171,29 +168,44 @@
     
 }
 
-.announce{
-    text-decoration: underline;
-}
-.innerblue{
-    display: flex;
-    justify-content: center;    
-}
-
-
-.check{
-    padding-top: 100px;
-    padding-bottom: 0px;
-    color: rgb(95, 95, 95);
-    font-size: 20px;
-}
-
-.events{
-    font-size: 72px;
-    background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 .div4{
-    background-color: rgb(228, 228, 228);
+   
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(228, 228, 228) , rgb(255, 255, 255));
+}
+
+.box1{
+    padding: 50px;
+    
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    padding-right: 20px;
+}
+.box2{
+    padding: 50px;
+    
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    padding-left: 20px;
+}
+.box3{
+    padding: 50px;
+    
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    padding-left: 20px;
+}
+.box4{
+    padding: 50px;
+    
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    padding-right: 20px;
+}
+
+
+.spaceholder{
+    background-color: rgb(255, 255, 255);
+    font-size: 1px;
+    color: rgb(255, 255, 255);
 }

@@ -10,11 +10,13 @@ const Members = (props) => {
     const [id, setId]=useState([]);
     const [memberToUpdate, setMemberToUpdate]=useState({})
     const [showUpdate,setShowUpdate] =useState(false)
+    const [number,setNumber] = useState('')
     
   
 
     useEffect(()=>{
-        getAllMembers();     
+        getAllMembers();
+        memberCount();     
     }, [])
     
 
@@ -75,6 +77,12 @@ const Members = (props) => {
         } }
 
 
+    function memberCount(){
+            let response = members.length;
+            setNumber(response)
+            console.log(response)
+
+    }
 
 
 
@@ -85,7 +93,7 @@ const Members = (props) => {
             <DeleteMember removemember = {deleteMember}/>
             {showUpdate ?  <UpdateMember updateInfo={updateMember} setMemberToUpdate={setMemberToUpdate} memberToUpdate={memberToUpdate}/>
             : null}
-           
+            <div>You have a member total of {number}</div>
         </div>
      );
 }

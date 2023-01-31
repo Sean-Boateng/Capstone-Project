@@ -2,12 +2,16 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import FullCalendar from '@fullcalendar/react' // must go before plugins
 import dayGridPlugin from '@fullcalendar/daygrid' // a plugin!
+
+
 import AddEvent from './AddEvent';
+import DisplayCalendar from './DisplayCalendar';
+
+
 
 
 
 const Calendar = () => {
-    const [event, setEvent] = useState([])
     const [data, setData] = useState([])
 
 
@@ -38,24 +42,25 @@ const Calendar = () => {
 
     return ( 
         <div>
-            
-            
             <FullCalendar
-                plugins={[ dayGridPlugin ]}
-                initialView="dayGridMonth"
-                weekends={true}
-                eventClick={
-                    function(arg){
-                        debugger
-                        alert(arg.event.title)
-                        
-                        alert(`${arg.event.title} will be happening live on ${arg.event.startStr}` )
+                    plugins={[ dayGridPlugin ]}
+                    initialView="dayGridMonth"
+                    weekends={true}
+                    eventClick={
+                        function(arg){
+                            debugger
+                            alert(arg.event.title)
+                            
+                            alert(`${arg.event.title} will be happening live on ${arg.event.startStr}` )
+                        }
                     }
-                }
-                events={data}
-                
-             />
-             <AddEvent addevent={addEvent}/>
+                    events={data}
+                    
+                />
+            
+            
+            <AddEvent addevent={addEvent}/>
+            <DisplayCalendar data={data}/>
             </div>
      );
 }

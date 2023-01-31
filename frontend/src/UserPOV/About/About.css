@@ -42,9 +42,10 @@
 
  .about-container {
     background-color: rgb(255, 255, 255);
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin-top: 50px;
+    display: flex;
+    
+    justify-content: center;
+    /* margin-top: 50px; */
     /* padding-top:30px ; */
     /* padding-right: 20px; */
     width: 1300px;
@@ -57,7 +58,9 @@
     color:black;
     padding: 10px;
     font-size: 30px;
-    /* padding-right: 10px;   */
+    display: block;
+    
+    
   }
 
 

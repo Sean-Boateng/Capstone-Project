@@ -1,0 +1,15 @@
+.emailborder{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+
+label{
+    background: -webkit-linear-gradient(rgb(49, 48, 48), rgb(59, 55, 51));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+

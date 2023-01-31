@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import axios from 'axios';
+import React, { useState,useEffect } from 'react';
 import Navbar2 from '../NavBar/navbar2';
 import "./About.css"
 import pastor1 from "./aboutpics/pastor1.jpg"
@@ -7,9 +8,25 @@ import person2 from "./aboutpics/person2.jpg"
 import person3 from "./aboutpics/person3.jpg"
 import person4 from "./aboutpics/person4.jpg"
 import person5 from "./aboutpics/person5.jpg"
-const About = () => {
+
+const About = (props) => {
+
+const[pictures, setPictures]=useState([]);
+
+
+useEffect(()=>{
+    getPictures();     
+}, [])
+
+
+async function getPictures(){
+    let response = await axios.get(`http://127.0.0.1:8000/api/pictures/all`)
+    console.log(response.data)
+    setPictures(response.data)
+}
 
     return ( 
+
         <div>
             <Navbar2/>
         <div className='adiv container pastorbio'>
@@ -23,58 +40,44 @@ const About = () => {
         <div className='container' style={{backgroundColor: "rgb(210, 210, 210)"}}>
             <div>
                 <div className='executive'>Executive Staff</div>
-                <div class="about-container " >
-                        <div class="about-item item1">
-                            <img  className='aitem1' src={pastor1} alt="" />
-                            <div>Pastors Mike and Mia</div>
-                            <div>Lead Pastors</div>
+                {pictures.map((el)=>{
+                    return(
+                        <div className='row'>
+                            <div class="col about-item">
+                                <img  className='aitem1' src={"http://127.0.0.1:8000"+el.image} alt="" />
+                                <div>{el.name}</div>
+                                <div>{el.role}</div>
+                            </div>
                         </div>
-                        <div class="about-item item2">
-                            <img  className='aitem1' src={person1} alt="" />
-                            <div> Natalie A</div>
-                            <div>Executive Pastor</div>
-                        </div>
-                        <div class="about-item item3">
-                            <img  className='aitem1' src={person2} alt="" />
-                            <div>Gerald B</div>
-                            <div>Executive Pastor</div>
-                            </div>  
-                        <div class="about-item item4">
-                            <img className='aitem1' src={person3} alt="" />
-                        </div>
-                        <div class="about-item item5">
-                            <img className='aitem1' src={person4} alt="" />
-                        </div>  
-                        <div class="about-item item6">
-                            <img className='aitem1' src={person5} alt="" />
-                        </div>  
-                        <div class="about-item item7">
-                            <div>Robert Dawney C</div>
-                            <div>Executive Pastor, Music</div>
-                        </div>  
-                        <div class="about-item item8">
-                            <div>Ryan D</div>
-                            <div>Executive Pastor, Operations</div>
-                        </div>  
-                        <div class="about-item item9">
-                            <div>Vanessa E</div>
-                            <div>Executive Pastor</div>
-                            </div>  
-                        {/* <div class="about-item item10">pbdui</div>  
-                        <div class="about-item item11">pbdui</div> 
-                        <div class="about-item item12">pbdui</div> 
-                        <div class="about-item item13">pbdui</div> 
-                        <div class="about-item item14">pbdui</div> 
-                        <div class="about-item item15">pbdui</div>  */}
-                                
-                    
-                </div>
+                    )
+                })}
             </div>
         </div>
        
        
     </div>
+
      );
 }
  
 export default About;
+
+
+
+
+
+
+
+
+
+
+
+        //     <table class="table">
+    //     <thead>
+          
+    //     </thead>
+
+    //     <tbody>
+    //             
+    //     </tbody>
+    //   </table>
