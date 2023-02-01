@@ -16,7 +16,7 @@ const Members = (props) => {
 
     useEffect(()=>{
         getAllMembers();
-        memberCount();     
+             
     }, [])
     
 
@@ -38,6 +38,7 @@ const Members = (props) => {
         })
         setMembers(newresponse)
         console.log(members)
+        memberCount()
     }
 
     async function addNewMember(newEntry){
@@ -77,7 +78,7 @@ const Members = (props) => {
         } }
 
 
-    function memberCount(){
+    async function memberCount(){
             let response = members.length;
             setNumber(response)
             console.log(response)
@@ -90,10 +91,13 @@ const Members = (props) => {
         <div>
             <MembersTable listOfMembers = {members} setMemberToUpdate={toggleAndUpdate}/>
             <AddMembers addmember = {addNewMember}/>
-            <DeleteMember removemember = {deleteMember}/>
+            < DeleteMember removemember = {deleteMember}/>
             {showUpdate ?  <UpdateMember updateInfo={updateMember} setMemberToUpdate={setMemberToUpdate} memberToUpdate={memberToUpdate}/>
             : null}
-            <div>You have a member total of {number}</div>
+            <div style={{paddingTop:"20px"}}>
+                <button onClick={memberCount}>count</button>
+                You have a member total of {number}
+            </div>
         </div>
      );
 }

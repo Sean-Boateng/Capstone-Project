@@ -1,8 +1,8 @@
 const AnnounceTable = (props) => {
     return ( 
         <table class="table table-dark">
-        <thead>
-          
+        <thead style={{color:"black"}}>
+          Announcements List
         </thead>
 
         <tbody>

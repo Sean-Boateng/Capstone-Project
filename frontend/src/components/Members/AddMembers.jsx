@@ -14,7 +14,7 @@ const AddMember = (props) => {
         info.preventDefault();
         let newEntry = {
             first_name: firstName,
-            last_name: firstName,
+            last_name: lastName,
             date_of_birth: DOB,
             address:address,
             email:email
@@ -24,6 +24,7 @@ const AddMember = (props) => {
     }
     return ( 
         <form onSubmit ={addNewMember}>
+            <div>Add Member</div>
             <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}>firstName</label>
             <input  style={{color: 'black'}} type='string' value ={firstName} onChange={(info)=>setFirstName(info.target.value  )}/><br/>
 

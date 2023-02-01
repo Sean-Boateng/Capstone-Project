@@ -1,23 +1,22 @@
 import React, { useState } from 'react';
 
-const DeleteMember = (props) => {
+const DeleteEvent = (props) => {
 
     const[id,setID]=useState('');
     
     
 
 
-    function deleteMember(info){
+    function deleteEvent(info){
         info.preventDefault();
        
         console.log(id)
-        props.removemember(id)
+        props.removeevent(id)
     }
     return ( 
-        <div style={{marginTop:"20px"}}>
-            <div>Delete Member</div>
+        <div>
             <div>PLEASE REFRESH PAGE TO SEE NEW RESULTS</div>
-            <form onSubmit ={deleteMember}>
+            <form onSubmit ={deleteEvent}>
                 <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}>ID Number</label>
                 <input  style={{color: 'black'}} type='number' value ={id} onChange={(info)=>setID(info.target.value )}/><br/>
 
@@ -28,4 +27,4 @@ const DeleteMember = (props) => {
         </div>
      );
 }
-export default DeleteMember;
+export default DeleteEvent;

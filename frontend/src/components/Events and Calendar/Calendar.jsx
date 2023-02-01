@@ -6,6 +6,8 @@ import dayGridPlugin from '@fullcalendar/daygrid' // a plugin!
 
 import AddEvent from './AddEvent';
 import DisplayCalendar from './DisplayCalendar';
+import DeleteEvent from './DeleteEvent';
+import EventsTable from './EventsTable';
 
 
 
@@ -23,6 +25,7 @@ const Calendar = () => {
         let response = await axios.get(`http://127.0.0.1:8000/api/events/`);
         let newresponse =(response.data).map(function(el){
             return {
+                id : el.id,
                 title: el.name,
                 date : el.date_of_event,
             }
@@ -39,6 +42,12 @@ const Calendar = () => {
           }
           setData(response)
     }
+
+    async function deleteEvent(id){
+        let response = await axios.delete(`http://127.0.0.1:8000/api/events/${id}/`);
+        if (response.status === 204){
+            return('Delete Successful')
+        } }
 
     return ( 
         <div>
@@ -60,7 +69,10 @@ const Calendar = () => {
             
             
             <AddEvent addevent={addEvent}/>
+            <EventsTable data = {data}/>
+            <DeleteEvent removeevent={deleteEvent}/>
             <DisplayCalendar data={data}/>
+            
             </div>
      );
 }
