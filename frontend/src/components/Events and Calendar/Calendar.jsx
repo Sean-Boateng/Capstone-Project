@@ -40,7 +40,7 @@ const Calendar = () => {
         if (response.status === 201){
             await getAllEvents()
           }
-          setData(response)
+        //   setData(response)
     }
 
     async function deleteEvent(id){
@@ -52,6 +52,7 @@ const Calendar = () => {
     return ( 
         <div>
             <FullCalendar
+                    events={data}
                     plugins={[ dayGridPlugin ]}
                     initialView="dayGridMonth"
                     weekends={true}
@@ -63,15 +64,16 @@ const Calendar = () => {
                             alert(`${arg.event.title} will be happening live on ${arg.event.startStr}` )
                         }
                     }
-                    events={data}
+                    
                     
                 />
             
             
             <AddEvent addevent={addEvent}/>
             <EventsTable data = {data}/>
-            <DeleteEvent removeevent={deleteEvent}/>
             <DisplayCalendar data={data}/>
+            <DeleteEvent removeevent={deleteEvent}/>
+            
             
             </div>
      );

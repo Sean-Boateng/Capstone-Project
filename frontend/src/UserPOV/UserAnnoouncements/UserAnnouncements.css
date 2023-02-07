@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
 
 .title{
     display: flex;
@@ -10,12 +10,13 @@
     font-family: 'Fredericka the Great';
 }
 .page{
-    font-family: 'Fredericka the Great';
     font-size: 30px;
-    background-color: rgb(172, 172, 172);
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(228, 228, 228) , rgb(255, 255, 255));
+    
 }
 
 
 .news{
     color:rgb(0, 0, 0);
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(228, 228, 228) , rgb(255, 255, 255));
 }
