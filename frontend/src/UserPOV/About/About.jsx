@@ -3,11 +3,6 @@ import React, { useState,useEffect } from 'react';
 import Navbar2 from '../NavBar/navbar2';
 import "./About.css"
 import pastor1 from "./aboutpics/pastor1.jpg"
-import person1 from "./aboutpics/person1.jpg"
-import person2 from "./aboutpics/person2.jpg"
-import person3 from "./aboutpics/person3.jpg"
-import person4 from "./aboutpics/person4.jpg"
-import person5 from "./aboutpics/person5.jpg"
 
 const About = (props) => {
 
@@ -42,8 +37,8 @@ async function getPictures(){
                 <div className='executive'>Executive Staff</div>
                 {pictures.map((el)=>{
                     return(
-                        <div className='row'>
-                            <div class="col about-item">
+                        <div className='about-containerx'>
+                            <div class=" about-item">
                                 <img  className='aitem1' src={"http://127.0.0.1:8000"+el.image} alt="" />
                                 <div>{el.name}</div>
                                 <div>{el.role}</div>

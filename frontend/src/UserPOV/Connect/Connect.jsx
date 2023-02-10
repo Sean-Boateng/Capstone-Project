@@ -10,12 +10,16 @@ const Connect = (props) => {
     return ( 
         <div>
             <Navbar2/>
-            <div className="container connectpage" >
+            <div className="container connectpage">
+                    
+                        <div className="toppage">
+                            <WelcomeVideo/>
+                            <div>
+                                <span className="welvidtext">HERE IS A MESSAGE FROM OUR VERY OWN, PASTOR ROBERTS, WELCOMING YOU TO OUR HOME, OUR FAMILY.</span>
+                            </div>
+                        </div>
+                    
 
-                <div className="toppage">
-                    <WelcomeVideo/>
-                    <div className="textenvi"><span className="welvidtext">HERE IS A MESSAGE FROM OUR VERY OWN, PASTOR ROBERTS, WELCOMING YOU TO OUR HOME, OUR FAMILY.</span></div>
-                </div>
                 <div>Listed below are our socials. Click to keep up with what happens.</div>
                 <div className="socials">
                     <a href="https://www.instagram.com/replibusa/?hl=en"><img src={insta} alt="" /></a>

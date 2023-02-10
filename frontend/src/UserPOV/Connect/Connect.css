@@ -3,32 +3,38 @@
     padding-top: 30px;
     background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(228, 228, 228) , rgb(255, 255, 255));
     
-}i
+}
 
 .toppage{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     padding-top: 50px;
-    /* padding-left: 10px; */
     padding-bottom: 20px;
     background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(228, 228, 228) , rgb(255, 255, 255));
     margin-bottom: 20px;
-
 }
 
-.textenvi{
+
+
+/* .vidwel{
+    display: flex;
+    justify-content: center;
+} */
+
+/* .textenvi{
     padding-top: 20px;
     font-size: 40px;
-}
+} */
 
 .welvidtext{
     background: -webkit-linear-gradient(rgb(49, 48, 48), rgb(59, 55, 51));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    /* margin-left: 50px; */
 }
 
-.socials{
+/* .socials{
     display: flex;
     justify-content: center;
-}
+} */

@@ -12,7 +12,7 @@ const HomePage2 = () => {
    
 
     return ( 
-        <div class="container">
+        <div>
             <Navbar2/>
             <Body1/>
             

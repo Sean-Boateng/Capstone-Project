@@ -1,4 +1,4 @@
-import time3 from "./bodyImages/time3.png"
+import clock from "./bodyImages/clock.png"
 import youtube3 from "./bodyImages/youtube3.png"
 import location3 from "./bodyImages/location3.png"
 import calendar from "./bodyImages/calendar.png"
@@ -8,6 +8,7 @@ import UserAnnouncementDetails from "../UserAnnoouncements/UserAnnouncementDetai
 import LatestVideo from "../../components/Youtube/LastestVideo"
 const Body1 = () => {
     
+
     
     return ( 
         <body>
@@ -15,31 +16,46 @@ const Body1 = () => {
                 <div className="group1">  
                     <span className="welcome">WEL<span className="c">C</span>OME</span>
                     <div className="message1">JOIN US IN-PERSON OR ONLINE EVERY SUNDAY AT 9:30 AM CST AND AT 12:30PM CST</div>
-                </div> 
-            </div>
-
-            <div className='div2'>
+                </div>
+                <div className='div2'>
                 <div class="grid-container">
-                    <div class="grid-item item1"><img className="clock" src={time3} alt="" /></div>
-                    <a href="https://www.youtube.com/@ToureRoberts"> <div class="grid-item item2"><img className="youtube" src={youtube3} alt="" /></div></a>
+
+                    
+
+                    <div class="grid-item item1"><img className="clock" src={clock} alt="" /></div>
+                    <a href="https://www.youtube.com/@ToureRoberts"> <div class="grid-item item2"><img className="youtube" src={youtube3} alt=""  /></div></a>
                     <div class="grid-item item3"><img  className="location" src={location3} alt="" /></div>  
                     <div class="grid-item item4"><div className="message2">JOIN US IN-PERSON OR ONLINE <br/>EVERY SUNDAY AT 9:30 AM CST<br/>AND AT 12:30PM CST</div></div>
                     <div class="grid-item item5"><div className="message3">CLICK HERE TO VISIT OUR YOUTUBE CHANNEL</div></div>  
                     <div class="grid-item item6"><div className="message2">4132 Park Avenue<br/>Bronx,NY-10457</div></div>  
                             
                 </div>
+            </div> 
             </div>
 
+            
+
             <div className="div4">
-                <div className="row">
-                    <div className="col box1"><a href="/news">Announcement</a> </div>
-                    <div className="col box2"><a href="/calendardisplay">Events/Calendar</a> </div>
-                </div>
+                <div>
+                    <div className="box1">
+                        <div className="sectionIntro">Find the lastest news about our family right here on the website</div>
+                            <a href="/news">
+                                <span className="section">ANNOUNCEMENT</span>
+                            </a>
+                        </div>
+
+                        <div className="box2">
+                            <div className="sectionIntro">Check out our upcoming programs!</div>
+                                <a href="/calendardisplay">
+                                    <span className="section">Events/Calendar</span>
+                                </a>
+                            </div>
+                    </div>
                 
-                <div className="row">
-                    <div className="spaceholder">hello</div>
-                    <LatestVideo/>
-                </div>
+                    <div className="row">
+                        <div className="spaceholder">hello</div>
+                        <LatestVideo/>
+                    </div>
                 
                     
                 </div>
