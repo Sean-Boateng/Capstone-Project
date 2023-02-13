@@ -1,10 +1,10 @@
 import axios from "axios";
 import React, { useState, useEffect } from 'react';
-import Videoforms from "./LastestVideo";
+
  const WelcomeVideo = () => {
 
     return ( 
-        <div>
+        <div className="videopage">
            
             <div>
 

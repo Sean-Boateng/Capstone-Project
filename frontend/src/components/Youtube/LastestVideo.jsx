@@ -36,19 +36,19 @@ const LatestVideo= () => {
     
 
     return ( 
-        <div className='youtubefile'>
+        <div>
 
             <iframe 
             className='player'
             id="ytplayer" 
                     type="text/html" 
                     width="640" 
-                    height="360"
+                    height="460"
                     
                     src={`https://www.youtube.com/embed/${id}?autoplay=1&origin=http://example.com`}
                     frameBorder="0">
             </iframe>
-            <div className='youtubefont'>Check Out Our <br/>Latest Sermon Upload</div>
+            
         </div>
      );
 }

@@ -1,7 +1,7 @@
 import clock from "./bodyImages/clock.png"
 import youtube3 from "./bodyImages/youtube3.png"
 import location3 from "./bodyImages/location3.png"
-import calendar from "./bodyImages/calendar.png"
+
 import './body1.css'
 import UserAnnouncements from "../UserAnnoouncements/UserAnnouncements"
 import UserAnnouncementDetails from "../UserAnnoouncements/UserAnnouncementDetails"
@@ -33,10 +33,6 @@ const Body1 = () => {
             </div> 
             </div>
 
-            {/* <div className="row">
-                        <div className="spaceholder">hello</div>
-                        <LatestVideo/>
-                    </div> */}
 
             <div className="div4">
                 <div>
@@ -56,7 +52,20 @@ const Body1 = () => {
                             <span className="section">Events/Calendar</span>
                         </a>
                     </div>
+
+                    <div>
+                        
+                        <div className=" container videodiv">
+                            <LatestVideo/> 
+                            <div >Here is where I will have the preacher name and sermon title</div>  
+                        </div>
+                        {/* <div className=" container videodiv2">
+                            <LatestVideo/>   
+                        </div> */}
+                        </div>
                 </div>
+
+                
                 
                     
                 
