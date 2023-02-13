@@ -11,7 +11,7 @@ const Body1 = () => {
 
     
     return ( 
-        <body>
+        <body style={{backgroundColor: "white"}}>
             <div className='div1'> 
                 <div className="group1">  
                     <span className="welcome">WEL<span className="c">C</span>OME</span>
@@ -33,29 +33,32 @@ const Body1 = () => {
             </div> 
             </div>
 
-            
+            {/* <div className="row">
+                        <div className="spaceholder">hello</div>
+                        <LatestVideo/>
+                    </div> */}
 
             <div className="div4">
                 <div>
                     <div className="box1">
-                        <div className="sectionIntro">Find the lastest news about our family right here on the website</div>
-                            <a href="/news">
-                                <span className="section">ANNOUNCEMENT</span>
-                            </a>
-                        </div>
+                        <a href="/news">
+                            <div className="sectionIntro">Click below to find the lastest news about our family</div>
+                            <span className="section" >
+                                
+                                ANNOUNCEMENT
+                            </span>
+                        </a>
+                    </div>
 
-                        <div className="box2">
-                            <div className="sectionIntro">Check out our upcoming programs!</div>
-                                <a href="/calendardisplay">
-                                    <span className="section">Events/Calendar</span>
-                                </a>
-                            </div>
+                    <div className="box2">
+                        <div className="sectionIntro">Click below to see our upcomig events</div>
+                        <a href="/calendardisplay">
+                            <span className="section">Events/Calendar</span>
+                        </a>
                     </div>
+                </div>
                 
-                    <div className="row">
-                        <div className="spaceholder">hello</div>
-                        <LatestVideo/>
-                    </div>
+                    
                 
                     
                 </div>
