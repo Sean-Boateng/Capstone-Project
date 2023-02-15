@@ -2,7 +2,8 @@ import axios from 'axios';
 import React, { useState,useEffect } from 'react';
 import Navbar2 from '../NavBar/navbar2';
 import "./About.css"
-import pastor1 from "./aboutpics/pastor1.jpg"
+import pastor1 from './aboutpics/pastor1.jpg'
+import pastor2 from './aboutpics/pastor2.jpg'
 
 const About = (props) => {
 
@@ -24,15 +25,46 @@ async function getPictures(){
 
         <div>
             <Navbar2/>
-        <div className='adiv container pastorbio'>
-            <div class="row" className='bio'>
-                <div class="col-9"><h1 style={{marginBottom:"20px"}}>About our Pastors</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo et quos dolores deserunt optio recusandae maiores, molestiae eligendi deleniti porro, laboriiii<br/>iiosam soluta est! Maiores vero solutadoloremqueperspiciatisreprehendii<br/>erit voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/> Atque quas commodi architecto magnam? Accusantium harum <br/>quaerat perspiciatis maxime ipsa culpa, ad blanditiis quod? <br/>Officia optio corrupti tempora fugiat aliquam quod!</div>
-                <div class="col-5"><img style={{marginTop:"85px"}} className='aimg1' src={pastor1} alt="" /></div>
-                
+
+            <div className='aboutdiv1'>
+                <div className='aboutdiv1text'>
+                    <div>We Are Family</div>
+                </div>  
             </div>
+
+            <div className='aboutdiv2'>
+                <div className='aboutdiv2text'>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, odio 
+                    eos error nostrum tempora, soluta aliquam tenetur illum sint obcaecati 
+                    dolorum unde facere, cumque voluptas sed. Minima accusantium possimus alias.
+                    Numquam, repudiandae porro. Reprehenderit ipsa accusantium praesentium, animi, 
+                    aperiam quisquam architecto, debitis consequuntur nihil atque sint molestias i
+                    psum magnam harum? Enim sed delectus accusantium obcaecati quae libero eaque qu
+                    isquam ex?
+                </div>
+            </div>
+            <div className='learn'>Learn more about our leaders</div>
+            <div className='aboutdiv3'>
+                <div className='imgandname'>
+                    <img className='aboutdiv3img' src={pastor1} alt="" style={{marginRight:"70px"}} />
+                    <div style={{marginRight:"70px"}}>Mo Bamba</div>
+                </div>
+                <div className='imgandname'>
+                    <img className='aboutdiv3img' src={pastor2} alt="" style={{marginLeft:"70px"}}/>
+                    <div style={{marginLeft:"70px"}}>Jenny Ortega</div>
+                </div>
+            </div>
+       
+        
+       
         </div>
 
-        <div className='container' style={{backgroundColor: "rgb(210, 210, 210)"}}>
+     );
+}
+ 
+export default About;
+
+ {/* <div className='container' style={{backgroundColor: "rgb(210, 210, 210)"}}>
             <div>
                 <div className='executive'>Executive Staff</div>
                 {pictures.map((el)=>{
@@ -47,15 +79,7 @@ async function getPictures(){
                     )
                 })}
             </div>
-        </div>
-       
-       
-    </div>
-
-     );
-}
- 
-export default About;
+        </div> */}
 
 
 
@@ -65,14 +89,3 @@ export default About;
 
 
 
-
-
-        //     <table class="table">
-    //     <thead>
-          
-    //     </thead>
-
-    //     <tbody>
-    //             
-    //     </tbody>
-    //   </table>

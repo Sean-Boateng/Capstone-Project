@@ -38,7 +38,7 @@ const Body1 = () => {
                 <div>
                     <div className="box1">
                         <a href="/news">
-                            <div className="sectionIntro">Click below to find the lastest news about our family</div>
+                            <div className="sectionIntro">Click below to find the lastest news and much more</div>
                             <span className="section" >
                                 
                                 ANNOUNCEMENT
@@ -47,7 +47,7 @@ const Body1 = () => {
                     </div>
 
                     <div className="box2">
-                        <div className="sectionIntro">Click below to see our upcomig events</div>
+                        {/* <div className="sectionIntro">Click below to see our upcomig events</div> */}
                         <a href="/calendardisplay">
                             <span className="section">Events/Calendar</span>
                         </a>

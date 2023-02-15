@@ -225,40 +225,40 @@
 .box1{
     
     padding-top: 50px;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     padding-left: 100px;
     padding-right: 100px;
     border: 1px rgb(255, 255, 255) solid;
 }
 .box2{
     
-    padding-top: 50px;
-    padding-bottom: 10px;
+    /* padding-top: 10px; */
+    padding-bottom: 50px;
     padding-left: 100px;
     padding-right: 100px;
     border: 1px rgb(255, 255, 255) solid;
 }
-.box3{
+/* .box3{
     padding: 50px;
     
     color: rgb(255, 255, 255);
     font-size: 40px;
     padding-left: 20px;
-}
-.box4{
+} */
+/* .box4{
     padding: 50px;
     
     color: rgb(255, 255, 255);
     font-size: 40px;
     padding-right: 20px;
-}
+} */
 
 
-.spaceholder{
+/* .spaceholder{
     background-color: rgb(255, 255, 255);
     font-size: 1px;
     color: rgb(255, 255, 255);
-}
+} */
 
 .videodiv{
     background-image: url(../body/bodyImages/try2.png);
