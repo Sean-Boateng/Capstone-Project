@@ -2,8 +2,11 @@ import axios from 'axios';
 import React, { useState,useEffect } from 'react';
 import Navbar2 from '../NavBar/navbar2';
 import "./About.css"
-import pastor1 from './aboutpics/pastor1.jpg'
-import pastor2 from './aboutpics/pastor2.jpg'
+import minSiriboe from './aboutpics/minSiriboe.JPG'
+import minfred from './aboutpics/minfred.JPG'
+import deputy from './aboutpics/deputy.JPG'
+import pasAmoako from './aboutpics/pasAmoako.JPG'
+import Artboard1 from './aboutpics/Artboard1.png'
 
 const About = (props) => {
 
@@ -27,8 +30,17 @@ async function getPictures(){
             <Navbar2/>
 
             <div className='aboutdiv1'>
-                <div className='aboutdiv1text'>
-                    <div>We Are Family</div>
+                
+                <div className='aboutdiv1items'>
+                    <div className='div1text'>
+                        <span style={{color:'black', fontSize:'55px'}}>About Our Minister</span>
+                        <br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellendus veritatis mollitia quibusdam magni debitis,<br/> quis beatae. Molestias earum mollitia culpa sed, temporibus atque id voluptatibus dolorum rerum sint consequatur.
+                        <br/>Provident omnis enim tempora molestiae? Praesentium deleniti amet sequi. Sint saepe atque, unde odit minus <br/>corrupti laboriosam ea dolorum deleniti laudantium excepturi! Voluptatem earum, beatae debitis assumenda<br/> libero aperiam ratione!
+                    </div>
+
+                    <div>
+                        <img className='div1img' src={minSiriboe} alt="" />
+                    </div>
                 </div>  
             </div>
 
@@ -43,15 +55,24 @@ async function getPictures(){
                     isquam ex?
                 </div>
             </div>
-            <div className='learn'>Learn more about our leaders</div>
+
+            <div className='learn'>Executive Staff</div>
+
             <div className='aboutdiv3'>
                 <div className='imgandname'>
-                    <img className='aboutdiv3img' src={pastor1} alt="" style={{marginRight:"70px"}} />
-                    <div style={{marginRight:"70px"}}>Mo Bamba</div>
+                    <img className='aboutdiv3img' src={minfred} alt="" style={{}} />
+                    <div style={{}}>Fred Karikari</div>
+                    <div style={{color:'black', fontSize:'25px'}}>Executive Minister</div>
                 </div>
                 <div className='imgandname'>
-                    <img className='aboutdiv3img' src={pastor2} alt="" style={{marginLeft:"70px"}}/>
-                    <div style={{marginLeft:"70px"}}>Jenny Ortega</div>
+                    <img className='aboutdiv3img' src={pasAmoako} alt="" style={{}}/>
+                    <div style={{}}>Amoako Boateng</div>
+                    <div style={{color:'black', fontSize:'25px'}}>Executive Pastor</div>
+                </div>
+                <div className='imgandname'>
+                    <img className='aboutdiv3img' src={deputy} alt="" style={{}}/>
+                    <div style={{}}>Richard Owusu</div>
+                    <div style={{color:'black', fontSize:'25px'}}>Deputy,General Overseer</div>
                 </div>
             </div>
        

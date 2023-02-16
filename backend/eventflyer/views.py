@@ -9,11 +9,18 @@ from rest_framework import status
 
 
 # Create your views here.
-@api_view(['GET'])
+@api_view(['GET', 'POST'])
 def getAllEfs(request):
-    ef = EventFlyer.objects.all()
-    serializer = EventFlyerSerializer(ef,many=True)
-    return Response(serializer.data)
+    if request.method == 'GET':
+        ef = EventFlyer.objects.all()
+        serializer = EventFlyerSerializer(ef,many=True)
+        return Response(serializer.data)
+
+    elif request.method == 'POST':
+        serializer = EventFlyerSerializer(data = request.data) 
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data)
 
 
 

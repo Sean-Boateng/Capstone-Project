@@ -29,6 +29,7 @@ import Calendar from "./components/Events and Calendar/Calendar";
 import FullCalendar from "@fullcalendar/react";
 import DisplayCalendar from "./components/Events and Calendar/DisplayCalendar";
 import Give from "./UserPOV/Give/Give";
+import EventFlyer from "./components/EventFlyer/EventFlyer";
 
 
 
@@ -61,6 +62,7 @@ function App() {
         <Route path="/events" element={<Calendar/>} />
         <Route path="/calendardisplay" element={<DisplayCalendar/>} />
         <Route path="/give" element={<Give/>} />
+        <Route path="/ef" element={<EventFlyer/>} />
       </Routes>
       {/* <Footer /> */}
     </div>
