@@ -47,7 +47,6 @@ INSTALLED_APPS = [
     'announcements',
     'pictures',
     'videoid',
-    'eventflyer',
     
 ]
 

@@ -47,6 +47,8 @@
     margin-top: 50px;
     display: flex;
     justify-content: center;
+   
+    padding-top: 10px;
 }
 .aboutdiv3img{
     width: 300px;
@@ -64,6 +66,7 @@
     justify-content: center;
     color: #ff8000;
     font-size: 25px;
+    
 }
 
 

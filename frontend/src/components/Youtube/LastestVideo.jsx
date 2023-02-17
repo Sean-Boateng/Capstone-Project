@@ -46,7 +46,7 @@ const LatestVideo= () => {
                     height="460"
                     
                     src={`https://www.youtube.com/embed/${id}?autoplay=1&origin=http://example.com`}
-                    frameBorder="0">
+                    frameBorder="0" style={{borderRadius:"30px"}}>
             </iframe>
             
         </div>

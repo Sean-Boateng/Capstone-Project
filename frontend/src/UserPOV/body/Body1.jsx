@@ -48,7 +48,7 @@ const Body1 = () => {
 
                     <div className="box2">
                         {/* <div className="sectionIntro">Click below to see our upcomig events</div> */}
-                        <a href="/calendardisplay">
+                        <a href="/ef">
                             <span className="section">Events/Calendar</span>
                         </a>
                     </div>

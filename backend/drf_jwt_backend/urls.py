@@ -30,7 +30,7 @@ urlpatterns = [
     path('api/announcements/', include('announcements.urls')),
     path('api/pictures/',include('pictures.urls')),
     path('api/videoid/',include('videoid.urls')),
-    path('api/ef/',include('eventflyer.urls')),
+   
     
     
 ]  + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

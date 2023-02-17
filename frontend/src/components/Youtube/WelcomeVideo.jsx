@@ -13,7 +13,7 @@ import React, { useState, useEffect } from 'react';
                     width="540" 
                     height="360"
                     src={`https://www.youtube.com/embed/d18FdIDJCUY?autoplay=1&origin=http://example.com`}
-                    frameBorder="0">
+                    frameBorder="0" style={{borderRadius:"30px"}}>
                     </iframe>
                     
 

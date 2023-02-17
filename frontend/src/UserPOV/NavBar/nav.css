@@ -1,6 +1,6 @@
 .wholenav{
     padding-bottom: 20px;
-    border-bottom: 2px rgb(205, 205, 205) solid; 
+    /* border-bottom: 2px rgb(205, 205, 205) solid;  */
 }
 
 
@@ -31,20 +31,8 @@
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
-/*
-.logoandname{
-    display: flex;
-    flex-direction: row;
-}
-.replib{
-    display: flex;
-    justify-content: center;
-    color: rgb(227, 121, 1);
-    font-family: serif;
-    font-style: oblique;
-    
-}
-*/
+
+
 
 .linkspacing{
     padding-top: 10px;
