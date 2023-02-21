@@ -1,0 +1,35 @@
+.homesection{
+    font-size: 2em;
+    border: 3px rgb(255, 255, 255) solid;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    
+    background: #CA4246;
+    background-color: #CA4246;
+    background: conic-gradient(
+        #ff8000 16.666%, 
+        #ff8000 16.666%, 
+        #e9e9e9 33.333%, 
+        #ff8000 33.333%, 
+        #ff8000 50%, 
+        #ff8000 50%, 
+        #e3e3e3 66.666%, 
+        #ff8000 66.666%, 
+        #dfdfdf 83.333%, 
+        #ff8000 83.333%);
+        background-size: 57%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        animation: rainbow-text-animation-rev 3s ease forwards;
+        cursor: pointer;
+    }
+
+
+    .homesection:hover{
+        animation: rainbow-text-animation 3s ease forwards;
+    }

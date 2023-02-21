@@ -15,7 +15,7 @@ const DeleteMember = (props) => {
     }
     return ( 
         <div style={{marginTop:"20px"}}>
-            <div>Delete Member</div>
+            <h1>Delete Member</h1>
             <div>PLEASE REFRESH PAGE TO SEE NEW RESULTS</div>
             <form onSubmit ={deleteMember}>
                 <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}>ID Number</label>

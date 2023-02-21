@@ -23,11 +23,11 @@ const AddMember = (props) => {
         props.addmember(newEntry)
     }
     return ( 
-        <form onSubmit ={addNewMember}>
-            <div>Add Member</div>
+        <form onSubmit ={addNewMember} style={{marginBottom: "70px"}}>
+            <h1>Add Member</h1>
             <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}>firstName</label>
             <input  style={{color: 'black'}} type='string' value ={firstName} onChange={(info)=>setFirstName(info.target.value  )}/><br/>
-
+            
             <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}> lastName</label>
             <input style={{color: 'black'}} type= 'string' value ={lastName} onChange={(info)=>setLastName(info.target.value)}/><br/>
 

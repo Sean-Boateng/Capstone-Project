@@ -89,8 +89,8 @@ const Members = (props) => {
 
     return ( 
         <div>
-            <MembersTable listOfMembers = {members} setMemberToUpdate={toggleAndUpdate}/>
-            <AddMembers addmember = {addNewMember}/>
+            <MembersTable listOfMembers = {members} setMemberToUpdate={toggleAndUpdate} />
+            <AddMembers  addmember = {addNewMember}/>
             < DeleteMember removemember = {deleteMember}/>
             {showUpdate ?  <UpdateMember updateInfo={updateMember} setMemberToUpdate={setMemberToUpdate} memberToUpdate={memberToUpdate}/>
             : null}

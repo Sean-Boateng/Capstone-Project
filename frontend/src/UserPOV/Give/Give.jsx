@@ -5,6 +5,7 @@ const Give = () => {
         <div>
             <Navbar2/>
             <h1>Coming Soon</h1>
+            <h2>This page will utilize the Sqaure Payment API to recieve donation</h2>
         </div>
      );
 }

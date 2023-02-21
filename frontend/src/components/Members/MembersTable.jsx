@@ -5,7 +5,7 @@ const MembersTable = (props) => {
  
 
     return ( 
-        <table class="table">
+        <table class="table" style={{marginBottom: "100px"}}>
         <thead> 
           <tr>
             <th> ID</th>

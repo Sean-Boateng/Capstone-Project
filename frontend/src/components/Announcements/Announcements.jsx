@@ -29,19 +29,20 @@ const Announcements = () => {
 
 
         async function AddNewnews(newEntry){
-            console.log(newEntry)
             let response = await axios.post('http://127.0.0.1:8000/api/announcements/', newEntry);
             if (response.status === 201){
-              await getAnnouncements()
+                return("nice")
             }
-            setNews(response)
-          }
+            getAnnouncements()
+        }
 
-          async function deleteAnnouncement(id){
+        async function deleteAnnouncement(id){
             let response = await axios.delete(`http://127.0.0.1:8000/api/announcements/${id}/`);
             if (response.status === 204){
-                return('Delete Successful')
-            } }
+                getAnnouncements()
+
+            }
+            }
 
 
     

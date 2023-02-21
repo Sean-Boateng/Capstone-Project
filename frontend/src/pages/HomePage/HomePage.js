@@ -5,6 +5,8 @@ import useAuth from "../../hooks/useAuth";
 import axios from "axios";
 import Calendar from "../../components/Events and Calendar/Calendar";
 import Announcements from "../../components/Announcements/Announcements";
+import Members from "../../components/Members/Members";
+import './HomePage.css'
 
 const HomePage = () => {
   // The "user" value from this Hook contains the decoded logged in user information (username, first name, id)
@@ -37,10 +39,27 @@ const HomePage = () => {
             {car.year} {car.model} {car.make}
           </p>
         ))}
-      <Calendar/>
-      <Announcements/>
+
+      
+      <div className="row">
+          <div className="col homesection">
+            <a href="/addnews">
+              Edit Announcements
+            </a>
+          </div>
+          
+          <div className="col homesection">
+            <a href="/members">
+              Member List
+            </a>
+          </div>
+      </div>
+
+
     </div>
   );
 };
 
 export default HomePage;
+{/* <Calendar/>
+      <Announcements/> */}

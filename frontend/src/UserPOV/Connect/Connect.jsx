@@ -15,7 +15,7 @@ const Connect = (props) => {
                         <div className="toppage">
                             <WelcomeVideo/>
                             <div>
-                                <span className="welvidtext">HERE IS A MESSAGE FROM OUR VERY OWN, PASTOR ROBERTS, WELCOMING YOU TO OUR HOME, OUR FAMILY.</span>
+                                <span className="welvidtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quasi, eum, illum non nihil repellendus magni expedita, rem maxime perspiciatis magnam sit facilis itaque minima? Minima odit ad tenetur delectus!</span>
                             </div>
                         </div>
                     

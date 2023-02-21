@@ -39,21 +39,42 @@ import Pictures from "./UserPOV/EventFlyers/EventFlyers";
 function App() {
   return (
     <div>
-      {/* <Navbar /> */}
+      
       <Routes>
         <Route
           path="/"
           element={
             <PrivateRoute>
+              <Navbar/>
               <HomePage/>
+              
             </PrivateRoute>           
           }
         />
+      
+        <Route
+          path="/members"
+          element={
+            <PrivateRoute>
+              <Members/>
+            </PrivateRoute>           
+          }
+        />
+        <Route
+          path="/addnews"
+          element={
+            <PrivateRoute>
+              <Announcements />
+            </PrivateRoute>           
+          }
+        />
+
+
+
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/addnews" element={<Announcements />} />
-        <Route path="/home" element={<HomePage2 />} />
-        <Route path="/members" element={<Members />} />
+        <Route path="/" element={''} />
+        <Route path="/home" element={<HomePage2 />}/>
         <Route path="/latest" element={<LatestVideo />} />
         <Route path="/contact" element={<ContactUs/>} />
         <Route path="/news" element={<UserAnnouncementDetails/>} />

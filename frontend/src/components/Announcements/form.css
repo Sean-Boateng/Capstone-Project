@@ -1,0 +1,22 @@
+.announcementform{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.announcementlabel{
+    font-size: 20px;
+    margin-right:20px;
+    margin-left:20px;
+    
+}
+
+.announcementtextarea{
+    margin-left:20px;
+    margin-right:20px;
+    inline-size: 400px;
+    overflow-wrap:break-word ;
+}
+
+
+/* style={{color: 'black', inlineSize: "400px",overflowWrap: "break-word"}} */

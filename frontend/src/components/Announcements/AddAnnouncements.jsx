@@ -1,3 +1,5 @@
+import './form.css'
+
 import React, { useState } from 'react';
 
 const AddAnnouncements = (props) => {
@@ -8,25 +10,24 @@ const AddAnnouncements = (props) => {
 
 
     function addNewnews(info){
-        info.preventDefault();
+        // info.preventDefault();
         let newEntry = {
             announcements: announcements,
-            details: details,
-            
+            details: details   
         };
+
         console.log(newEntry)
         props.addnews(newEntry)
     }
     return ( 
-        <form onSubmit ={addNewnews}>
-            <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}>announcements</label>
-            <input  style={{color: 'black'}} type='string' value ={announcements} onChange={(info)=>setAnnouncements(info.target.value  )}/><br/>
+        <form onSubmit ={addNewnews} className='announcementform' >
+            <label className='announcementlabel'>Announcement</label>
+            <textarea type='string' value ={announcements} placeholder="Announcement Headline" onChange={(info)=>setAnnouncements(info.target.value  )}className='announcementtextarea'/><br/>
 
-            <label style={{paddingBottom:'1rem' ,paddingRight:'1em'}}> details</label>
-            <input style={{color: 'black'}} type= 'string' value ={details} onChange={(info)=>setDetails(info.target.value)}/><br/>
+            <label className='announcementlabel' style={{paddingBottom:'1rem' ,paddingRight:'1em'}}> Detail</label>
+            <textarea className='announcementtextarea' placeholder="Explanation" type= 'string' value ={details} onChange={(info)=>setDetails(info.target.value)}/><br/>
 
-            
-            <button type='submit' >Add</button>
+            <button type='submit' style={{margin:"5px"}}>Add</button>
         </form >
      );
 }
