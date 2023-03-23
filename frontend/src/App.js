@@ -29,7 +29,7 @@ import Calendar from "./components/Events and Calendar/Calendar";
 import FullCalendar from "@fullcalendar/react";
 import DisplayCalendar from "./components/Events and Calendar/DisplayCalendar";
 import Give from "./UserPOV/Give/Give";
-import Pictures from "./UserPOV/EventFlyers/EventFlyers";
+import EventFlyers from "./UserPOV/EventFlyers/EventFlyers";
 
 
 
@@ -79,7 +79,7 @@ function App() {
         <Route path="/contact" element={<ContactUs/>} />
         <Route path="/news" element={<UserAnnouncementDetails/>} />
         <Route path="/about" element={<About/>} />
-        <Route path="/ef" element={<Pictures/>} />
+        <Route path="/ef" element={<EventFlyers/>} />
         <Route path="/connect" element={<Connect/>} />
         <Route path="/calendar" element={<Calendar/>} />
         <Route path="/calendardisplay" element={<DisplayCalendar/>} />

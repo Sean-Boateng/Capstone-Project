@@ -2,6 +2,10 @@ import clock from "./bodyImages/clock.png"
 import youtube3 from "./bodyImages/youtube3.png"
 import location3 from "./bodyImages/location3.png"
 import speaker4 from "./bodyImages/speaker4.png"
+import land1 from "./bodyImages/land1.jpg"
+import land2 from "./bodyImages/land2.jpg"
+import land3 from "./bodyImages/land3.jpg"
+
 
 import './body1.css'
 import UserAnnouncements from "../UserAnnoouncements/UserAnnouncements"
@@ -35,55 +39,78 @@ const Body1 = () => {
             </div>
 
 
-            <div className="div4">
-                <div>
-                    <div className=" row box1">
-                        
-                        <div className="col">
+
+            <div className=" div4">
+                <div className="row" style={{}}>
+
+                <div className="col-md-1"></div>
+
+                    <div className=" col-md-4 box1"> 
+                        <div className="">
                             <div className="box1head">Announcement</div>
                             <div className="box1text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quisquam ipsam quas expedita, totam pariatur doloremque, doloribus molestias nostrum numquam voluptatum dolores corporis accusantium sapiente amet, sequi porro recusandae magnam.
                             Ipsam, molestiae esse! Sapiente dolores fuga laborum nulla quaerat? A possimus laboriosam illum ipsam deleniti adipisci, nihil vel? Neque explicabo ratione possimus, aspernatur voluptas expedita magnam exercitationem odit ad sapiente?
                             </div>
-                            <a href="/news"><button style={{backgroundColor:"#ff8000", border: "#ff8000"}} class="btn btn-primary">Click</button></a>                       
-                        </div>
-
-                        <div className="col box1img">
-                            <img className="bimg" src={speaker4} alt="" />
-                        </div>
-                        
+                            Click<a href="/news"><button style={{backgroundColor:"#ff8000", border: "#ff8000", marginLeft:'15px'}} class="btn btn-primary">Here</button></a>                       
+                        </div>   
                     </div>
 
-                    <div className="box2 row">
+                    <div className="col-md-2"></div>
 
-                        <div className="col box1img">
-                            <img className="bimg" src={speaker4} alt="" />
-                        </div>
 
-                        <div className="col">
+                    <div className="box2 col-md-4">
+
+                        <div className="">
                             <div className="box1head">Events</div>
                             <div className="box1text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quisquam ipsam quas expedita, totam pariatur doloremque, doloribus molestias nostrum numquam voluptatum dolores corporis accusantium sapiente amet, sequi porro recusandae magnam.
                             Ipsam, molestiae esse! Sapiente dolores fuga laborum nulla quaerat? A possimus laboriosam illum ipsam deleniti adipisci, nihil vel? Neque explicabo ratione possimus, aspernatur voluptas expedita magnam exercitationem odit ad sapiente?
                             </div>
-                            <a href="/ef"><button style={{backgroundColor:"#ff8000", border: "#ff8000"}} class="btn btn-primary">Click</button></a>                       
-                        </div>
-                        
+                            Click<a href="/ef"><button style={{backgroundColor:"#ff8000", border: "#ff8000", marginLeft:'15px'}} class="btn btn-primary">Here</button></a>                       
+                        </div>                      
                     </div>
 
-                    <div>
-                        
-                        <div className="videodiv">
-                            <LatestVideo/> 
-                            <div >Here is where I will have the preacher name and sermon title</div>  
-                        </div>
-                        {/* <div className=" container videodiv2">
-                            <LatestVideo/>   
-                        </div> */}
-                        </div>
+                    <div className="col-md-1"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    {/* <div>
+                        <div className=" container videodiv2" style={{borderRadius:"30px"}}>
+                            <LatestVideo/>  
+                            <div style={{color:'white'}}>
+                                <div style={{color:'white', fontSize:'30px', textAlign: 'start' }}>
+                                    Pastor Roosevelt Stewart
+                                </div> <br/>
+
+                                <div style={{color:'white', fontSize:'50px'}}>
+                                    Seeing Men as Trees
+                                </div>
+                            </div> 
+                        </div>                             
+                    </div> */}
                 </div>
 
                 
                 
-                    
+
+
+
+
+
+
+
+
+
                 
                     
                 </div>

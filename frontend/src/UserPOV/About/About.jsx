@@ -33,18 +33,18 @@ async function getPictures(){
                 
                 <div className='aboutdiv1items'>
                     <div className='div1text'>
-                        <span style={{color:'black', fontSize:'55px'}}>About Our Minister</span>
-                        <br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellendus veritatis mollitia quibusdam magni debitis,<br/> quis beatae. Molestias earum mollitia culpa sed, temporibus atque id voluptatibus dolorum rerum sint consequatur.
-                        <br/>Provident omnis enim tempora molestiae? Praesentium deleniti amet sequi. Sint saepe atque, unde odit minus <br/>corrupti laboriosam ea dolorum deleniti laudantium excepturi! Voluptatem earum, beatae debitis assumenda<br/> libero aperiam ratione!
+                        <span style={{color:'black', fontSize:'55px'}}>About Our Deputy</span>
+                        <br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellendus veritatis mollitia quibusdam magni d<br/>ebitis, quis beatae. Molestias earum mollitia culpa sed, temporibus atque id voluptatibus dolorum rerum sint<br/> consequatur.
+                        Provident omnis enim tempora molestiae? Praesentium deleniti amet sequi. Sint saepe at <br/>que,unde odit minus corrupti laboriosam ea dolorum deleniti laudantium excepturi! Voluptatem ear<br/>um, beatae debitis assumenda libero aperiam ratione!
                     </div>
 
                     <div>
-                        <img className='div1img' src={minSiriboe} alt="" />
+                        <img className='div1img' src={deputy} alt=""/>
                     </div>
                 </div>  
             </div>
 
-            <div className='aboutdiv2'>
+            {/* <div className='aboutdiv2'>
                 <div className='aboutdiv2text'>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, odio 
                     eos error nostrum tempora, soluta aliquam tenetur illum sint obcaecati 
@@ -54,7 +54,7 @@ async function getPictures(){
                     psum magnam harum? Enim sed delectus accusantium obcaecati quae libero eaque qu
                     isquam ex?
                 </div>
-            </div>
+            </div> */}
 
             <div className='learn'>Executive Staff</div>
 
@@ -65,14 +65,14 @@ async function getPictures(){
                     <div style={{color:'black', fontSize:'25px'}}>Executive Minister</div>
                 </div>
                 <div className='imgandname'>
-                    <img className='aboutdiv3img' src={pasAmoako} alt="" style={{}}/>
-                    <div style={{}}>Amoako Boateng</div>
-                    <div style={{color:'black', fontSize:'25px'}}>Executive Pastor</div>
+                    <img className='aboutdiv3img' src={minSiriboe} alt="" style={{}}/>
+                    <div style={{}}>Daniel Nkansah</div>
+                    <div style={{color:'black', fontSize:'25px'}}>Executive Minister</div>
                 </div>
                 <div className='imgandname'>
-                    <img className='aboutdiv3img' src={deputy} alt="" style={{}}/>
-                    <div style={{}}>Richard Owusu</div>
-                    <div style={{color:'black', fontSize:'25px'}}>Deputy,General Overseer</div>
+                    <img className='aboutdiv3img' src={pasAmoako} alt="" style={{}}/>
+                    <div style={{}}>Amoako</div>
+                    <div style={{color:'black', fontSize:'25px'}}>Executive Pastor</div>
                 </div>
             </div>
        

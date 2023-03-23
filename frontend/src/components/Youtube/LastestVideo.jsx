@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import "./youtube.css"
+import { pointInsideRect } from '@fullcalendar/core/internal';
 
 
 
@@ -13,9 +14,10 @@ const LatestVideo= () => {
 
     async function getVideoId(){
         let response = await axios.get(`http://127.0.0.1:8000/api/videoid/`)
-        console.log(response.data[0].videoid)
+        console.log(response.data[response.data.length-1].videoid)
         
-        setId(response.data[0].videoid)  
+        setId(response.data[response.data.length-1].videoid) 
+        console.log(id) 
     }
 
     // Object.keys(id).forEach(key =>{

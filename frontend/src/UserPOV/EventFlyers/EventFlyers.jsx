@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './EventFlyers.css'
 import Navbar2 from '../NavBar/navbar2';
-const Pictures = (props) => {
+const EventFlyers = (props) => {
     const[info,setInfo] = useState([]);
 
 
@@ -51,5 +51,5 @@ const Pictures = (props) => {
     );
 }
  
-export default Pictures;
+export default EventFlyers;
  
