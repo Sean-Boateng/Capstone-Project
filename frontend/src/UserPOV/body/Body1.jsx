@@ -41,82 +41,54 @@ const Body1 = () => {
 
 
             <div className=" div4">
-                <div className="row" style={{}}>
-
-                <div className="col-md-1"></div>
-
-                    <div className=" col-md-4 box1"> 
-                        <div className="">
-                            <div className="box1head">Announcement</div>
-                            <div className="box1text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quisquam ipsam quas expedita, totam pariatur doloremque, doloribus molestias nostrum numquam voluptatum dolores corporis accusantium sapiente amet, sequi porro recusandae magnam.
-                            Ipsam, molestiae esse! Sapiente dolores fuga laborum nulla quaerat? A possimus laboriosam illum ipsam deleniti adipisci, nihil vel? Neque explicabo ratione possimus, aspernatur voluptas expedita magnam exercitationem odit ad sapiente?
-                            </div>
-                            Click<a href="/news"><button style={{backgroundColor:"#ff8000", border: "#ff8000", marginLeft:'15px'}} class="btn btn-primary">Here</button></a>                       
-                        </div>   
-                    </div>
-
-                    <div className="col-md-2"></div>
-
-
-                    <div className="box2 col-md-4">
-
-                        <div className="">
-                            <div className="box1head">Events</div>
-                            <div className="box1text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quisquam ipsam quas expedita, totam pariatur doloremque, doloribus molestias nostrum numquam voluptatum dolores corporis accusantium sapiente amet, sequi porro recusandae magnam.
-                            Ipsam, molestiae esse! Sapiente dolores fuga laborum nulla quaerat? A possimus laboriosam illum ipsam deleniti adipisci, nihil vel? Neque explicabo ratione possimus, aspernatur voluptas expedita magnam exercitationem odit ad sapiente?
-                            </div>
-                            Click<a href="/ef"><button style={{backgroundColor:"#ff8000", border: "#ff8000", marginLeft:'15px'}} class="btn btn-primary">Here</button></a>                       
-                        </div>                      
-                    </div>
+                <div className="row">
 
                     <div className="col-md-1"></div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    {/* <div>
-                        <div className=" container videodiv2" style={{borderRadius:"30px"}}>
-                            <LatestVideo/>  
-                            <div style={{color:'white'}}>
-                                <div style={{color:'white', fontSize:'30px', textAlign: 'start' }}>
-                                    Pastor Roosevelt Stewart
-                                </div> <br/>
-
-                                <div style={{color:'white', fontSize:'50px'}}>
-                                    Seeing Men as Trees
+                        <div className=" col-md-4 box1" style={{marginBottom:"70px"}}> 
+                            <div className="">
+                                <div className="box1head">Announcement</div>
+                                <div className="box1text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quisquam ipsam quas expedita, totam pariatur doloremque, doloribus molestias nostrum numquam voluptatum dolores corporis accusantium sapiente amet, sequi porro recusandae magnam.
+                                Ipsam, molestiae esse! Sapiente dolores fuga laborum nulla quaerat? A possimus laboriosam illum ipsam deleniti adipisci, nihil vel? Neque explicabo ratione possimus, aspernatur voluptas expedita magnam exercitationem odit ad sapiente?
                                 </div>
-                            </div> 
-                        </div>                             
-                    </div> */}
-                </div>
+                                Click<a href="/news"><button style={{backgroundColor:"#ff8000", border: "#ff8000", marginLeft:'15px'}} class="btn btn-primary">Here</button></a>                       
+                            </div>   
+                        </div>
 
-                
-                
+                        <div className="col-md-2"></div>
 
 
+                        <div className="box2 col-md-4"style={{marginBottom:"70px"}}>
 
+                            <div className="">
+                                <div className="box1head">Events</div>
+                                <div className="box1text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quisquam ipsam quas expedita, totam pariatur doloremque, doloribus molestias nostrum numquam voluptatum dolores corporis accusantium sapiente amet, sequi porro recusandae magnam.
+                                Ipsam, molestiae esse! Sapiente dolores fuga laborum nulla quaerat? A possimus laboriosam illum ipsam deleniti adipisci, nihil vel? Neque explicabo ratione possimus, aspernatur voluptas expedita magnam exercitationem odit ad sapiente?
+                                </div>
+                                Click<a href="/ef"><button style={{backgroundColor:"#ff8000", border: "#ff8000", marginLeft:'15px'}} class="btn btn-primary">Here</button></a>                       
+                            </div>                      
+                        </div>
 
-
-
-
-
-
-                
-                    
-                </div>
-            <div>
-                
+                    <div className="col-md-1"></div>
+                </div>         
             </div>
+
+            <div className=" row videoboard">
+                <div className="col-md-2 "></div>
+                <div className="col-md-3 video">
+                   <LatestVideo/> 
+                </div>
+                <div className="col-md-2"></div>
+                <div className="col-md-3 videotext">
+                    <span style={{fontSize: "30px"}}>Sermon Title:</span>
+                   <span className="messagetitle"><b>He Won't Fail</b> </span>
+                   <span style={{fontSize: "30px"}}>Speaker:</span>
+                   <span className="messagespeaker"><b>Todd Galberth</b></span>
+                </div>
+                <div className="col-md-2"></div>
+            </div>
+                
+            
 
             
             

@@ -152,7 +152,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 50px;
+    margin-top: 70px;
+    
 }
 
 .box1{
@@ -289,32 +290,35 @@ body{
 
 
 
-.videodiv{
-    background-image: url(../body/bodyImages/try2.png);
-    background-size: 100%;
-    width:100%;
-    height:100%;
-    padding-top: 30px; 
-    padding-bottom: 30px; 
-    padding-left: 50px;
-
-    display:flex;
-    font-size: 50px;
-    color: #ffffff;
-   
-
-}
-
-
-
-.videodiv2{
-    margin-top: 20px;
+.videoboard{
     background-color: #ff8000;
-    margin-bottom: 50px;
-    padding-left: 50px;
-    padding-top: 30px; 
-    padding-bottom: 30px; 
-    display:flex;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-/* #ededed */
+
+
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+.videotext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    
+}
+
+.messagetitle{
+    color: white;
+    font-size: 30px;
+}
+
+.messagespeaker{
+    color: white;
+    font-size: 30px;
+}
+

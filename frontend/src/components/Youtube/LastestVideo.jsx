@@ -20,20 +20,6 @@ const LatestVideo= () => {
         console.log(id) 
     }
 
-    // Object.keys(id).forEach(key =>{
-    //     console.log('key', key)
-    //     console.log('value', id[key]);
-    // })
-
-
-   
-    // let finalvalue = id.reduce((spread, grade)=>{
-    //     let count = spread.get(grade) || 0;
-    //     spread.set(grade, ++count);
-    //     return spread;
-    // }, new Map());
-    // finalvalue = Array.from(finalvalue)
-    // console.log(finalvalue)
 
     
 
@@ -41,7 +27,6 @@ const LatestVideo= () => {
         <div>
 
             <iframe 
-            className='player'
             id="ytplayer" 
                     type="text/html" 
                     width="640" 

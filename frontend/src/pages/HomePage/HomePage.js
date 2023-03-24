@@ -7,6 +7,8 @@ import Calendar from "../../components/Events and Calendar/Calendar";
 import Announcements from "../../components/Announcements/Announcements";
 import Members from "../../components/Members/Members";
 import './HomePage.css'
+import AllVideos from "../../components/Youtube/Videos/AllVideos";
+
 
 const HomePage = () => {
   // The "user" value from this Hook contains the decoded logged in user information (username, first name, id)
@@ -54,7 +56,8 @@ const HomePage = () => {
             </a>
           </div>
       </div>
-
+      
+<AllVideos/>
 
     </div>
   );
