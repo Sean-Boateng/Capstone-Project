@@ -7,7 +7,10 @@ import Calendar from "../../components/Events and Calendar/Calendar";
 import Announcements from "../../components/Announcements/Announcements";
 import Members from "../../components/Members/Members";
 import './HomePage.css'
-import AllVideos from "../../components/Youtube/Videos/AllVideos";
+import AddVideoForm from "../../components/Youtube/Videos/AddVideoForm";
+import NewVideos from "../../components/Youtube/Videos/AllVideos";
+
+
 
 
 const HomePage = () => {
@@ -57,8 +60,7 @@ const HomePage = () => {
           </div>
       </div>
       
-<AllVideos/>
-
+      <NewVideos/>
     </div>
   );
 };

@@ -73,11 +73,11 @@ const Body1 = () => {
                 </div>         
             </div>
 
-            <div className=" row videoboard">
+            {/* <div className=" row videoboard">
                 <div className="col-md-2 "></div>
-                <div className="col-md-3 video">
+                <div className="col-md-3 video"> */}
                    <LatestVideo/> 
-                </div>
+                {/* </div>
                 <div className="col-md-2"></div>
                 <div className="col-md-3 videotext">
                     <span style={{fontSize: "30px"}}>Sermon Title:</span>
@@ -86,7 +86,7 @@ const Body1 = () => {
                    <span className="messagespeaker"><b>Todd Galberth</b></span>
                 </div>
                 <div className="col-md-2"></div>
-            </div>
+            </div> */}
                 
             
 

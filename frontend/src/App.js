@@ -30,6 +30,8 @@ import FullCalendar from "@fullcalendar/react";
 import DisplayCalendar from "./components/Events and Calendar/DisplayCalendar";
 import Give from "./UserPOV/Give/Give";
 import EventFlyers from "./UserPOV/EventFlyers/EventFlyers";
+import NewVideos from "./components/Youtube/Videos/AllVideos";
+
 
 
 
@@ -68,6 +70,15 @@ function App() {
             </PrivateRoute>           
           }
         />
+        <Route
+          path="/addvideo"
+          element={
+            <PrivateRoute>
+              <NewVideos />
+            </PrivateRoute>           
+          }
+        />
+      
 
 
 

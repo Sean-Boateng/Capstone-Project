@@ -1,52 +1,39 @@
-import axios from 'axios';
+import axios from "axios";
 import React, { useState, useEffect } from 'react';
+import AddVideoForm from "./AddVideoForm";
 
-const AllVideos = (props) => {
-    const[videoid,setvideoId]=useState([]);
+
+const NewVideos = (props) => {
+
+    const[allid, setAllid]=useState([])
+
 
     useEffect(()=>{
-        getVideoId();     
+        getAllVideoId();     
     }, [])
 
-    async function getVideoId(){
+    async function getAllVideoId(){
         let response = await axios.get(`http://127.0.0.1:8000/api/videoid/`)
         console.log(response.data)
-        
-        setvideoId(response.data) 
-        console.log(videoid) 
+        setAllid(response.data)
     }
 
-    async function addVideoId(newEntry){
-        let response = await axios.post(`http://127.0.0.1:8000/api/videoid/`,newEntry)
+    async function addVideo(newEntry){
+        let response = await axios.post('http://127.0.0.1:8000/api/videoid/', newEntry);
         if (response.status === 201){
-            await getVideoId()
-          }
-          
+            console.log('nice')
+        }
+        
+        getAllVideoId()
     }
-
-
-    function addId(info){
-        // info.preventDefault();
-        let newEntry = {
-            videoid:videoid
-        };
-        console.log(newEntry)
-        addVideoId(newEntry)
-    }
-
-
-
 
     
+
     return ( 
-        
-            <form onSubmit ={addId}>
-                <label>ID</label>
-                <input  style={{color: 'black'}} type='string' value ={videoid} placeholder="video id" onChange={(info)=>setvideoId(info.target.value)}/>
-                <button type='submit' >Add</button>
-            </form>
-        
+        <div>
+            <AddVideoForm addvideo ={addVideo}/> 
+        </div>
      );
 }
  
-export default AllVideos;
+export default NewVideos;

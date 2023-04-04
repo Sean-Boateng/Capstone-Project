@@ -7,6 +7,8 @@ import { pointInsideRect } from '@fullcalendar/core/internal';
 
 const LatestVideo= () => {
     const[id,setId]=useState([]);
+    const[speaker,setSpeaker]=useState([]);
+    const[title,setTitle]=useState([]);
 
     useEffect(()=>{
         getVideoId();     
@@ -17,7 +19,11 @@ const LatestVideo= () => {
         console.log(response.data[response.data.length-1].videoid)
         
         setId(response.data[response.data.length-1].videoid) 
-        console.log(id) 
+        setSpeaker(response.data[response.data.length-1].speaker) 
+        setTitle(response.data[response.data.length-1].title) 
+        console.log(id)
+        console.log(speaker)
+        console.log(title)
     }
 
 
@@ -26,17 +32,38 @@ const LatestVideo= () => {
     return ( 
         <div>
 
-            <iframe 
-            id="ytplayer" 
+            
+
+            <div className=" row videoboard">
+
+                <div className="col-md-1 "></div>
+                
+                <div className="col-md-4 ">
+                <iframe 
+                id="ytplayer" 
                     type="text/html" 
                     width="640" 
                     height="460"
-                    
                     src={`https://www.youtube.com/embed/${id}?autoplay=1&origin=http://example.com`}
                     frameBorder="0" style={{borderRadius:"30px"}}>
-            </iframe>
+                </iframe>
+                </div>
+
+                <div className="col-md-2"></div>
+
+                <div className="col-md-4 videotext">
+                    <span style={{fontSize: "30px"}}>Sermon Title:</span>
+                   <span className="messagetitle"><b>{title}</b> </span>
+                   <span style={{fontSize: "30px"}}>Speaker:</span>
+                   <span className="messagespeaker"><b>{speaker}</b></span>
+                </div>
+
+                <div className="col-md-1"></div>
+                
+            </div> 
+
+        </div> 
             
-        </div>
      );
 }
  

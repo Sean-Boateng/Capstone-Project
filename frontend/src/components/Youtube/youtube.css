@@ -1,18 +1,32 @@
-.youtubefile{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
 
-.youtubefont{
-    padding-left: 10px;
+.videoboard{
+    background-color: #ff8000;
+    margin-bottom: 30px;
     padding-top: 20px;
-    font-size: 40px;
+    padding-bottom: 20px;
 }
 
-.player{
-    padding-right: 10px;
+
+
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+.videotext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    
+}
+
+.messagetitle{
+    color: white;
+    font-size: 30px;
+}
+
+.messagespeaker{
+    color: white;
+    font-size: 30px;
 }

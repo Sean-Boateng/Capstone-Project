@@ -290,35 +290,3 @@ body{
 
 
 
-.videoboard{
-    background-color: #ff8000;
-    margin-bottom: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-
-
-.video{
-    display: flex;
-    justify-content: center;
-}
-
-.videotext{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: start;
-    
-}
-
-.messagetitle{
-    color: white;
-    font-size: 30px;
-}
-
-.messagespeaker{
-    color: white;
-    font-size: 30px;
-}
-
